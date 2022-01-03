@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       f9c20a97-6d82-4e73-b9c3-e9d4ca8ea6f7
+:END:
+#+title: Print out all files from the installed RPM package
+#+filetags: :procedure:linux:rpm:
+
+* Problem
+  Print out all files from the installed RPM package
+
+* Solution
+  rpm -ql my-package

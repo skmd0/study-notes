@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       a0d24d09-a33e-49c7-93c4-624b5ec22c52
+:END:
+#+title: Count the lines of a text file
+#+filetags: :procedure:linux:wc:
+
+* Problem
+  How many lines are in specific text file.
+
+* Solution
+  wc -l my-file.txt
+

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       98835a1d-e3a8-44dc-8d73-f7f516f55760
+:END:
+#+title: Run a shell command as a different user
+#+filetags: :procedure:sudo:security:
+
+* Problem
+  Execute command my-command as alice user (while you are bob user).
+
+* Solution
+  sudo -u alice my-command

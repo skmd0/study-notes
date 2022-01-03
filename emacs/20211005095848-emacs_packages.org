@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       5c2fd01f-748d-4efb-b239-eddb015c4949
+:END:
+#+title: Emacs upgrade packages
+#+filetags: :procedure:
+
+* Problem
+  Upgrade installed packages.
+
+* Solution
+
+1. Open interactive buffer with packages
+   M-x list-packages
+   
+2. Wait for packages to get refreshed.
+   
+3. Mark packages for upgrade
+   U
+   
+4. Execute upgrades
+   x

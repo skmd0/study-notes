@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       c2daae65-465d-40bb-a8b9-13e0a3f4b935
+:END:
+#+title: create a systemd target.wants directory
+#+filetags: :procedure:linux:systemd:
+
+* Problem
+  Create a new target.wants directory which groups systemd service unit files.
+
+* Solution
+  
+1. enter default system's systemd unit directory
+   cd /etc/systemd/system/
+   
+2. create a directory that starts with target filename and ends with .wants
+   sudo mkdir my-target.target.wants/
+   
+3. specify the dependencies by creating the symbolic links to unit files
+   sudo ln -s /usr/lib/systemd/system/httpd.service .

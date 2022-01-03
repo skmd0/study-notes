@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       fcb5a965-4dd5-4cb2-8dc0-d324eeb1e28a
+:END:
+#+title: Search for additional documentation you can install
+#+filetags: :procedure:linux:rpm:docs:
+
+* Problem
+  Find additional documentation that you can install. 
+
+* Solution
+  dnf search documentation
+  

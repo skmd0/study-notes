@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       bd0dc532-246a-424d-ba0a-efe8f4948625
+:END:
+#+title: systemd list of active targets
+#+filetags: :procedure:systemd:linux:
+
+* Problem
+  Get a list of all the active targets that got loaded.
+
+* Solution
+  systemctl list-units --type target
+
+* Additional options
+
+** Output ALL targets (active and inactive)
+   systemctl list-units --type target --all

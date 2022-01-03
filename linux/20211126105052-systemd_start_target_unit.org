@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       bfd2f832-db3f-45e9-aa51-27b25b0a1db3
+:END:
+#+title: systemd start target unit
+#+filetags: :procedure:systemd:linux:
+
+* Problem
+  Start specific systemd target unit and stop all other target units.
+
+* Solution
+  systemctl isolate my-target.target
+  

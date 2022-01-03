@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       c5d060d3-c60c-4d80-b253-a12ead1faaf5
+:END:
+#+title: Sudoers file syntax
+
+* Commands section sytax
+#+BEGIN_SRC sh
+  # user host=(run as user/group) commands 
+  root ALL=(ALL) ALL
+
+  # 'my-user' can run all commands on a host 'mailserver' as a 'mail_user' 
+  my-user mailserver=(mail_user) ALL
+#+END_SRC

@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       7532daf6-3cb2-4547-b6df-883a9244a9ee
+:END:
+#+title: systemd Unit file cheatsheet
+#+filetags: :cheatsheet:
+
+* systemd Unit file cheatsheet
+#+BEGIN_SRC
+  # section header
+  [Unit]
+
+  # just a basic description of what the target file represenets
+  Description=Penguin's Target 
+
+  # location for the man page or other documentation file
+  Documentation=
+
+  # what other unit files needs to be successfully loaded or this unit will fail
+  # all units here are started in parallel
+  Requires=multi-user.target 
+
+  # similar to Requires but less strict, meaning this unit file won't fail
+  # if the wanted unit files fails
+  Wants=penguin.service
+
+  # which unit files cannot be run at the same time as this unit file
+  # when you start this unit file, the active unit files on this list will be stopped
+  Conflicts=rescue.service rescue.target
+
+  # what unit files are started before you target gets loaded (OR vs AND??)
+  # you need to specify the unit files in Requires/Wants too 
+  # if you want to set a dependency relationship
+  After=multi-user.target rescue.service rescue.target
+
+  # can system switch into this target?
+  AllowIsolate=yes
+#+END_SRC 
+

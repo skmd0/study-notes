@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       24f3ece0-0696-4818-91d0-b1b349b987a4
+:END:
+#+title: systemd set default target
+#+filetags: :procedure:systemd:linux:
+
+* Problem
+  Set the default systemd target unit to boot into.
+
+* Solution
+  systemctl set-default my-target.target
+  
